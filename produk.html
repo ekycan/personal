@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliché</title>
+    <link rel="icon" href="../assets/35mm.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../assets/Film Roll.png" alt="Logo">
+            </div>
+            <button class="toggle-btn" onclick="toggleNav()">☰</button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="profil.html">Profile</a></li>
+                    <li><a href="komunitas.html">Community</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="content">
+        <h2>Daftar Produk</h2>
+        <div class="product-card">
+            <div class="card">
+                <img src="../foto/MUN 200.jpg" alt="Product 1">
+                <h3>MUN 200</h3>
+                <p>MUN 200 Hand-rolled by @filmonkish</p>
+                <p class="price">Rp. 100.000</p>
+                <button class="detail-btn" onclick="showDetail('MUN 200', 'MUN 200 Hand-rolled by @filmonkish Roll film Mun dengan tone warna kehijauan dan terkadang kebiruan akan memberikan hasl fotomu karakter yang unik dan menonjol. Vibe yang aesthetic bisa didapatkan dengan roll film mun. TIPE: 35MM, ISI: 36 EXPOSURE, ISO: 200, PROCESS DEV: ECN-2, NO DX CODE', 'Rp. 100.000')">Detail</button>
+            </div>
+            <div class="card">
+                <img src="../foto/Kodak Gold.jpg" alt="Product 4">
+                <h3>Kodak Gold 200</h3>
+                <p>Film-rolled by Kodak</p>
+                <p class="price">Rp. 150.000</p>
+                <button class="detail-btn" onclick="showDetail('Kodak Gold 200', 'Film Kodak Gold 200. ISO : 200. Developer : C-41. Format : 35mm. Exposures : 36 shoots. Film ini dapat menghasilkan warna warm kuning lebih ke emas dengan ketajaman warna yang dapat diandalkan. Film ini cocok untuk human interest atau street.', 'Rp. 150.000')">Detail</button>
+            </div>
+            <div class="card">
+                <img src="../foto/ZEN 250.jpg" alt="Product 2">
+                <h3>ZEN 250</h3>
+                <p>ZEN 250 Hand-rolled by @filmonkish</p>
+                <p class="price">Rp. 95.000</p>
+                <button class="detail-btn" onclick="showDetail('ZEN 250', 'ZEN 250 PREMIUM Hand-rolled by @filmonkish Roll film Zen dengan tone warna kehijauan dan terkadang kebiruan akan memberikan hasl fotomu karakter yang unik dan menonjol. Vibe yang aesthetic bisa didapatkan dengan roll film zen. TIPE: 35MM, ISI: 36 EXPOSURE, ISO: 250, PROCESS DEV: ECN-2, NO DX CODE', 'Rp. 95.000')">Detail</button>
+            </div>
+            <div class="card">
+                <img src="../foto/Kodak daylight.jpg" alt="Product 3">
+                <h3>Kodak Daylight Disposible Cam</h3>
+                <p>Kodak Daylight Disposable Film Camera adalah kamera point-and-shoot 35mm yang sederhana.</p>
+                <p class="price">Rp. 221.500</p>
+                <button class="detail-btn" onclick="showDetail('Kodak Daylight Disposible Cam', 'Kodak Daylight Disposable Film Camera adalah kamera point-and-shoot 35mm yang sederhana. Film yang Anda dapatkan dengan kamera ini adalah 800 ISO. Kamera ini akan mampu mengatasi berbagai macam situasi. Mudah dan menyenangkan untuk digunakan. Kamera ini cukup kecil untuk dibawa ke mana saja. Sempurna jika Anda ingin membuat film untuk pertama kalinya. Ideal untuk segala aktivitas di luar ruangan. Juga merupakan kamera yang bisa dibawa ke mana saja dan Anda tidak perlu khawatir. Masukkan satu ke dalam tas Anda sekarang! Kamera Siang Hari memiliki lensa berkualitas tinggi yang presisi dengan panjang fokus 1 meter hingga tak terbatas untuk memberi Anda gambar yang jelas dan tajam. Kamera ini tidak memiliki lampu kilat dan akan bekerja paling baik di luar ruangan, dalam berbagai situasi yang diterangi sinar matahari.', 'Rp. 221.500')">Detail</button>
+            </div>
+            <div class="card">
+                <img src="../foto/Novacam 1.jpg" alt="Product 4">
+                <h3>Novacam 1</h3>
+                <p>Novacam 1 ini sudah menggunakan dc motor untuk mengokang nya dan untuk proses rewind.</p>
+                <p class="price">Rp. 150.000</p>
+                <button class="detail-btn" onclick="showDetail('Canon Mate', 'Fitur kamera ini diantaranya adakah lensa dengan bukaan lensa (aperture) F3.5, dilengkapi dengan flash internal, film counter, motor, led indikator cahaya, dan pengaturan ISO di 100/200 dan 400.', 'Rp. 150.000')">Detail</button>
+            </div>
+            <div class="card">
+                <img src="../foto/Fujica M1.jpg" alt="Product 5">
+                <h3>Fujica M1</h3>
+                <p>Fujica M1 merupakan kamera analog film yang dikeluarkan PT Honoris Industry.</p>
+                <p class="price">Rp. 350.000</p>
+                <button class="detail-btn" onclick="showDetail('Fujica M1', 'Lensa: Lensa kaca Fujinon 40 mm f/8 (3 elemen/3 grup). Fokus: Fokus tetap, mode fokus dekat untuk lampu kilat. Rana: Mekanis di belakang lensa, 1/125 dtk. Flash: Hot shoe dengan sinkronisasi X. Pengangkutan film: Kenop maju, engkol mundur. Dimensi: 114 x 73 x 50 mm. Berat: 170 gram.', 'Rp. 350.000')">Detail</button>
+            </div>
+            <!-- Repeat the above structure for additional products -->
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span onclick="closeDetail()" style="cursor: pointer; float: right; font-size: 20px; margin-bottom: 10px;">&times;</span>
+            <h3 id="detailTitle">Product Title</h3>
+            <p id="detailDescription">Product Description</p>
+            <p class="price" id="detailPrice">Product Price</p>
+            <button class="pesan-btn" onclick="pesanProduct('anda')">Pesan</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>@KUXHENX</p>
+    </footer>
+
+    <script>
+        var prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('header').style.top = '0';
+            } else {
+                document.querySelector('header').style.top = '-80px'; // Adjust the height of your header
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+
+        function toggleNav() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+
+        // Hide navigation when a link is clicked (for mobile)
+        var navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                var navLinks = document.querySelector('.nav-links');
+                navLinks.classList.remove('show');
+            });
+        });
+
+        function pesanProduct(productName) {
+        var nomorWhatsApp = "+628123456789"; // Ganti dengan nomor WhatsApp yang sesuai
+        var pesan = "Halo, saya tertarik dengan produk " + productName;
+
+        // Buka link WhatsApp dengan nomor dan pesan yang telah ditentukan
+        window.open('https://wa.me/' + nomorWhatsApp + '?text=' + encodeURIComponent(pesan), '_blank');
+    }
+
+      // Fungsi untuk menampilkan popup detail
+      function showDetail(title, description, price) {
+            document.getElementById('detailTitle').innerHTML = title;
+            document.getElementById('detailDescription').innerHTML = description;
+            document.getElementById('detailPrice').innerHTML = price;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // Fungsi untuk menutup popup detail
+        function closeDetail() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
